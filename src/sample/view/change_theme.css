@@ -1,0 +1,24 @@
+.list-view {
+    -fx-background-color: #232323;
+}
+
+.list-view .list-cell:selected {
+    -fx-background-color: #434343;
+}
+
+.list-view .list-cell {
+    -fx-background-color: #232323;
+    -fx-text-fill: white;
+}
+
+.list-view .label {
+    -fx-text-fill: white;
+}
+
+#control-pane {
+    -fx-background-color: #760cff;
+}
+
+#alert-pane {
+    -fx-background-color: #3c95ff;
+}

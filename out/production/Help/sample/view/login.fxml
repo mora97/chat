@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.LoginController">
+    <BorderPane prefHeight="550.0" prefWidth="650.0">
+        <top>
+            <Pane id="frame-title" prefHeight="100.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+                <Label layoutX="300.0" layoutY="38.0" styleClass="title">LOGIN</Label>
+            </Pane>
+        </top>
+        <center>
+            <VBox id="text-field-group" prefHeight="283.0" prefWidth="650.0" BorderPane.alignment="CENTER">
+                <Label fx:id="errorLabel" text="Please Fill ID and Password">
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </Label>
+                <Label text="ID" />
+                <TextField fx:id="idTF" prefHeight="4.0" prefWidth="450.0">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </TextField>
+                <Label text="Password">
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                </Label>
+                <PasswordField fx:id="passwrodF">
+                    <VBox.margin>
+                        <Insets top="5.0" />
+                    </VBox.margin>
+                </PasswordField>
+                <BorderPane.margin>
+                    <Insets top="70.0" />
+                </BorderPane.margin>
+                <padding>
+                    <Insets left="100.0" right="100.0" />
+                </padding>
+            </VBox>
+        </center>
+        <bottom>
+            <HBox prefHeight="69.0" prefWidth="650.0">
+                <Button layoutX="500.0" onAction="#sign_up" prefHeight="25.0" prefWidth="69.0" text="Sigh Up">
+                    <HBox.margin>
+                        <Insets left="100.0" />
+                    </HBox.margin>
+                </Button>
+                <Button layoutX="400.0" onAction="#login" prefHeight="25.0" prefWidth="69.0" text="Login">
+                    <HBox.margin>
+                        <Insets left="320.0" />
+                    </HBox.margin>
+                </Button>
+            </HBox>
+        </bottom>
+    </BorderPane>
+    <stylesheets>
+        <URL value="@shared.css" />
+    </stylesheets>
+</AnchorPane>

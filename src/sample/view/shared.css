@@ -1,0 +1,36 @@
+#frame-title {
+    -fx-background-color: #760cff;
+}
+
+.title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-text-fill: white;
+
+}
+
+.list-view {
+    -fx-background-color: white;
+}
+
+.list-view .list-cell:selected {
+    -fx-background-color: dodgerblue;
+}
+
+.list-view .list-cell {
+    -fx-background-color: white;
+    -fx-text-fill: #232323;
+}
+
+.list-view .label {
+    -fx-text-fill: #232323;
+}
+
+#control-pane {
+    -fx-background-color: #760cff;
+}
+
+#alert-pane {
+    -fx-background-color: #3c95ff;
+}

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.SignUpController">
+    <BorderPane prefHeight="550.0" prefWidth="650.0">
+        <top>
+            <Pane id="frame-title" prefHeight="100.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+                <Label layoutX="293.0" layoutY="38.0" styleClass="title">SIGN UP</Label>
+            </Pane>
+        </top>
+        <center>
+            <VBox id="text-field-group" prefHeight="368.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+                <Label fx:id="errorNameLabel" text="Wrong Name">
+                    <VBox.margin>
+                        <Insets top="5.0" />
+                    </VBox.margin>
+                </Label>
+                <Label fx:id="errorIDLabel" text="Wrong ID" />
+                <Label fx:id="errorEmailLabel" text="Wrong Email" />
+                <Label fx:id="errorPasswordLabel" text="Pass is less then 6 char" />
+                <Label fx:id="errorConfirmPassLabel" text="Do not match">
+                    <VBox.margin>
+                        <Insets bottom="5.0" />
+                    </VBox.margin>
+                </Label>
+
+                <Label text="Name" />
+                <TextField fx:id="nameTF">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </TextField>
+                <Label text="ID">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <TextField fx:id="idTF">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </TextField>
+                <Label text="E-mail">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <TextField fx:id="emailTF">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </TextField>
+                <Label text="Password">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <PasswordField fx:id="passwordF">
+                    <VBox.margin>
+                        <Insets top="5.0" />
+                    </VBox.margin>
+                </PasswordField>
+                <Label text="Confirm Password">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <PasswordField fx:id="confirmPasswordF">
+                    <VBox.margin>
+                        <Insets top="5.0" />
+                    </VBox.margin>
+                </PasswordField>
+                <BorderPane.margin>
+                    <Insets />
+                </BorderPane.margin>
+                <padding>
+                    <Insets left="100.0" right="100.0" />
+                </padding>
+            </VBox>
+        </center>
+        <bottom>
+            <HBox prefWidth="500.0">
+                <Button layoutX="500.0" onAction="#Login" prefHeight="25.0" prefWidth="69.0" text="Back">
+                    <HBox.margin>
+                        <Insets left="100.0" />
+                    </HBox.margin>
+                </Button>
+                <Button layoutX="400.0" onAction="#singUp" prefHeight="25.0" prefWidth="69.0" text="Next">
+                    <HBox.margin>
+                        <Insets bottom="20.0" left="320.0" />
+                    </HBox.margin>
+                </Button>
+            </HBox>
+        </bottom>
+    </BorderPane>
+    <stylesheets>
+        <URL value="@shared.css" />
+    </stylesheets>
+</AnchorPane>
